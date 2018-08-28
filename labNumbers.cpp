@@ -179,7 +179,8 @@ class rangeResearcher : public numberResearcher
     std::string enterRange = "\nEnter number for research: ";
     std::string enterLrange = "\nEnter start number in the range: ";
     std::string enterRrange = "\nEnter end number in the range: ";
-    std::string labRange = "\nAll lab numbers in the given range are:\n\n[\n";
+    std::string labRange = "\nAll lab numbers in the given range [";
+    std::string back = "] are:\n\n[\n";
     std::string notlabRange = "\nNot a single number in the given range((\n";
 	std::string rangeHeader = "\nStored range:\n";
 	// integer container for begin of range
@@ -220,6 +221,11 @@ class rangeResearcher : public numberResearcher
 		else {
 			// send find any lab number message to user
 			pOL(labRange);
+			pOL(lRange);
+			pOL(',');
+			pOL(' ');
+			pOL(rRange);
+			pOL(back);
 			// printing by vector iterator in the for-loop
 			for (std::vector<int>::iterator it = lab_numbers.begin();
 			     it!=lab_numbers.end(); it++){
