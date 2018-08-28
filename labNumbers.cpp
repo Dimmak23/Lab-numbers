@@ -50,6 +50,7 @@ class storage{
 	std::string modeHeader = "\nChoose your goal of research: ";
     std::string incorrect = "\nThis input is incorrect.\n";
     std::string comeAgain = "\nThat's all for now, run again.\n";
+    
     // char container for answer letter from user kept stored privetly
 	char answer;	
 	
@@ -119,7 +120,6 @@ class numberResearcher : public storage
     std::string enterNumber = "\nEnter number for research: ";
     std::string lab = "\nYou enter a lab number.\n";
     std::string notlab = "\nYou enter not a lab number.\n";
-    std::string numberHeader = "\nStored number:\n";
 	
 	// integer container for collected number from user
 	int number;
@@ -176,13 +176,12 @@ class rangeResearcher : public numberResearcher
     // class and main program
 	private:
 	// messages represent as strings for range research dialogs
-    std::string enterRange = "\nEnter number for research: ";
     std::string enterLrange = "\nEnter start number in the range: ";
     std::string enterRrange = "\nEnter end number in the range: ";
     std::string labRange = "\nAll lab numbers in the given range [";
     std::string back = "] are:\n\n[\n";
     std::string notlabRange = "\nNot a single number in the given range((\n";
-	std::string rangeHeader = "\nStored range:\n";
+
 	// integer container for begin of range
 	int lRange;
 	// integer container for end of range
